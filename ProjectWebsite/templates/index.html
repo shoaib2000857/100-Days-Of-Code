@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to My Projects</h1>
+    <p class="lead">This is a simple website to showcase my projects from the 100 Days of Code Udemy course.</p>
+    <a class="btn btn-primary btn-lg" href="{{ url_for('projects_page') }}" role="button">View Projects</a>
+</div>
+{% endblock %}
