@@ -1,14 +1,14 @@
 [
     {
         "id": 1,
-        "title": "Project 1",
-        "description": "Description of project 1",
-        "github": "https://github.com/yourusername/project1"
+        "title": "Blog",
+        "description": "A simple blog website created using python , flask and bootstrap.",
+        "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/blog"
     },
     {
         "id": 2,
-        "title": "Project 2",
-        "description": "Description of project 2",
-        "github": "https://github.com/yourusername/project2"
+        "title": "Forms",
+        "description": "Tutorial on how to create forms using flask and WTForms.",
+        "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/forms"
     }
 ]
