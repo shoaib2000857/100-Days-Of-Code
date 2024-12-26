@@ -7,6 +7,13 @@
     },
     {
         "id": 2,
+        "title": "Coffee & Wifi",
+        "description": "A simple website created to show the availability of wifi , power and quality of coffee at popular coffee shops.",
+        "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/Coffee&Wifi"
+
+    },
+    {
+        "id": 3,
         "title": "Forms",
         "description": "Tutorial on how to create forms using flask and WTForms.",
         "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/forms"
