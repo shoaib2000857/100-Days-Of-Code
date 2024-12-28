@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Add Book</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      header {
+        background: #00796b;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #004d40 3px solid;
+      }
+      header h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+      }
+      form {
+        background: #fff;
+        padding: 20px;
+        margin-top: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+      }
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      button {
+        background: #00796b;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      button:hover {
+        background: #004d40;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Add New Book</h1>
+    </header>
+    <div class="container">
+      <form action="/add" method="POST">
+        <label>Book Name</label>
+        <input type="text" name="title" />
+        <label>Book Author</label>
+        <input type="text" name="author" />
+        <label>Rating</label>
+        <input type="text" name="rating" />
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+  </body>
+</html>

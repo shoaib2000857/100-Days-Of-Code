@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Library</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #e0f7fa;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 80%;
+        margin: auto;
+        overflow: hidden;
+      }
+      header {
+        background: #00796b;
+        color: #fff;
+        padding-top: 30px;
+        min-height: 70px;
+        border-bottom: #004d40 3px solid;
+      }
+      header h1 {
+        text-align: center;
+        margin: 0;
+        font-size: 24px;
+      }
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      li {
+        background: #fff;
+        margin: 10px 0;
+        padding: 10px;
+        border: #ccc 1px solid;
+        border-radius: 5px;
+      }
+      li:nth-child(odd) {
+        background: #f9f9f9;
+      }
+      button {
+        background: #00796b;
+        color: #fff;
+        border: none;
+        padding: 5px 10px;
+        cursor: pointer;
+        border-radius: 3px;
+      }
+      button:hover {
+        background: #004d40;
+      }
+      .add-book {
+        display: block;
+        width: 150px;
+        margin: 20px auto;
+        text-align: center;
+        background: #00796b;
+        color: #fff;
+        padding: 10px;
+        text-decoration: none;
+        border-radius: 5px;
+      }
+      .add-book:hover {
+        background: #004d40;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Library</h1>
+    </header>
+    <div class="container">
+      <ul>
+        {% for book in books %}
+          <li>
+            <strong>{{ book.title }}</strong> by {{ book.author }} - {{ book.rating }}/10
+            <a href="{{ url_for('editrating', book_id=book.id) }}"><button>Edit Rating</button></a>
+            <form action="{{ url_for('delete', book_id=book.id) }}" method="POST" style="display:inline;">
+              <button type="submit">Delete</button>
+            </form>
+          </li>
+        {% endfor %}
+        {% if not books %}
+          <li>No books in library</li>
+        {% endif %}
+      </ul>
+      <a href="{{ url_for('add') }}" class="add-book">Add New Book</a>
+    </div>
+  </body>
+</html>
