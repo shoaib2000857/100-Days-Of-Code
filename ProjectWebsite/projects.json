@@ -4,21 +4,21 @@
         "title": "Blog",
         "description": "A simple blog website created using python , flask and bootstrap.",
         "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/blog",
-        "demo": "#"
+        "demo": "https://mini-blog-seven-lovat.vercel.app/"
     },
     {
         "id": 2,
         "title": "Coffee & Wifi",
         "description": "A simple website created to show the availability of wifi , power and quality of coffee at popular coffee shops.",
         "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/Coffee&Wifi",
-        "demo": "#"
+        "demo": "https://coffeeandwifi-woad.vercel.app/add"
     },
     {
         "id": 3,
         "title": "Library Manager",
         "description": "A simple website to track books, their authors and ratings.",
         "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/LibraryManager",
-        "demo": "#"
+        "demo": "https://librarymanagerssm.vercel.app/"
     },
     {
         "id": 4,
