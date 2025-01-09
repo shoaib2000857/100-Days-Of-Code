@@ -33,5 +33,12 @@
         "description": "Tutorial on how to create SQL databases using SQLite, SQLAlchemy and flask.",
         "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/SQL",
         "demo": "#"
+    },
+    {
+        "id": 6,
+        "title": "Top 10 Movies",
+        "description": "A website to create a dynamic list of my top 10 recomended movies.",
+        "github": "https://github.com/shoaib2000857/100-Days-Of-Code/tree/main/top10movies",
+        "demo": "#"
     }
 ]
