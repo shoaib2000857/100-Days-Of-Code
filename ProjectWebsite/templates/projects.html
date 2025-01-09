@@ -4,6 +4,14 @@
 
 {% block content %}
 <h2 class="my-4">Projects</h2>
+<form method="get" action="{{ url_for('search') }}" class="mb-4">
+    <div class="input-group">
+        <input type="text" name="q" class="form-control" placeholder="Search projects...">
+        <div class="input-group-append">
+            <button class="btn btn-primary" type="submit">Search</button>
+        </div>
+    </div>
+</form>
 <div class="list-group">
     {% for project in projects %}
         <a href="{{ url_for('project_detail', project_id=project.id) }}" class="list-group-item list-group-item-action">

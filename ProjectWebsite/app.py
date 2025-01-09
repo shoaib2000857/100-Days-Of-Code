@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify, request
 import json
 
 app = Flask(__name__)
@@ -27,6 +27,13 @@ def project_detail(project_id):
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
+
+@app.route('/search')
+def search():
+    query = request.args.get('q', '')
+    projects = load_projects()
+    filtered_projects = [proj for proj in projects if query.lower() in proj['title'].lower() or query.lower() in proj['description'].lower()]
+    return render_template('projects.html', projects=filtered_projects)
 
 if __name__ == '__main__':
     app.run(debug=True)
